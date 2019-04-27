@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+<head>
+	<title>Animated Sticky Navbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.js"></script>
+	<script type="text/javascript">
+		$(window).on('scroll', function(){
+			if($(window).scrollTop()){
+				$('nav').addClass('black');
+			}
+			else{
+				$('nav').removeClass('black');
+			}
+		})
+	</script>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img src="images/turingologo.png">
+		</div>
+			<ul>
+			<li><a href="#sec1" class="active">About</a></li>
+			<li><a href="#sec2">Contact</a></li>
+			<li><a href="#sec3">Our Team</a></li>
+			<li><a href="#sec4">Know more</a></li>
+			</ul>
+	</nav>
+	
+	<section class="sec1" id="sec1" data-text="About"></section>
+	<section class="content">
+		<h1 style="text-align: center; text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); font-size: 50px;">About Us</h1>
+		<p style="font-size: 24px; color: black; font-family: serif">To know the unknown is the human nature.
+		A lot of questions come and get out of our mind, daily, some get answered but some remain unsolved.
+		What if, if there is some one who can answer your questions real quick </p>
+		<p style="font-size: 24px; color: black; font-family: serif">So here we are</p>
+		<p style="font-size: 24px; color: black; font-family: serif"><b>Turingo</b> is an inquisitve social learning app for students to question and answer. Now ask your question, get expert answers with visually rich explanation and join communities of your interested.</p>
+	</section>
+	<section class="sec2" id="sec2" data-text="Contact"></section>
+	
+	<section class="content" style="background: #ccc">
+	<div class="bg-contact100" style="background-image: url('images/bg-01.jpg');">
+		<div class="container-contact100">
+			<div class="wrap-contact100">
+				<div class="contact100-pic js-tilt" data-tilt>
+					<!--<img src="images/img-01.png" alt="IMG">
+					<img src="http://www.mp.nic.in/images_boot/contact.png">-->
+					<img src="images/email_icon.png">
+					
+				</div>
+
+				<form class="contact100-form validate-form">
+					<span class="contact100-form-title">
+						Let's get connected
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Name is required">
+						<input class="input100" type="text" name="name" placeholder="Name">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-user"></i>						
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Message is required">
+						<textarea class="input100" name="message" placeholder="Message"></textarea>
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="container-contact100-form-btn">
+						<button class="contact100-form-btn">
+							Send
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	</section>
+	<section class="sec3" id="sec3" data-text="Our Team"></section>
+	
+	<section class="content">
+	<h1 style="text-align: center;text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); font-size: 50px;">Our Team</h1>
+		<div class="testimonials">
+		<div class="card" onclick="window.location.href = 'http://example.com';">
+			<div class="layer"></div>
+			<div class="content">
+			<p>Lorem ipsum is simply a dummy text of the printing and typetesting industry. Lorem Ipsum has been the industry standards dummy text ever since the 1500s</p>
+			<div class="image">
+				<img src="images/propic1.jpeg">
+			</div>
+			<div class="details">
+				<h2>Name<br><span>Profession</span></h2>	
+			</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+			<p>Lorem ipsum is simply a dummy text of the printing and typetesting industry. Lorem Ipsum has been the industry standards dummy text ever since the 1500s</p>
+			<div class="image">
+				<img src="images/propic2.jpeg">
+			</div>
+			<div class="details">
+			<h2>Name<br><span>Profession</span></h2>	
+			</div>
+			</div>
+		</div>
+		
+		<div class="card">
+			<div class="layer"></div>
+			<div class="content">
+			<p>Lorem ipsum is simply a dummy text of the printing and typetesting industry. Lorem Ipsum has been the industry standards dummy text ever since the 1500s</p>
+			<div class="image">
+				<img src="images/propic3.jpeg">
+			</div>
+			<div class="details">
+			<h2>Name<br><span>Profession</span></h2>	
+			</div>
+			</div>
+		</div>
+		
+	</div>
+
+	</section>
+	<section class="sec4" id="sec4" data-text="Know more"></section>
+	
+	<section class="content" style="background: #ccc">
+	<h1 style="margin: -30px; margin-bottom: 10px; text-align: center;text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15); font-size: 40px;">Curious to know more about us? </h1>
+		<a href="https://www.facebook.com/ImTuringo/" class="icon-button facebook"><i class="fa fa-facebook"></i><span></span></a>
+		<a href="https://twitter.com/Imturingo" class="icon-button twitter"><i class="fa fa-twitter"></i><span></span></a>
+		<a href="https://www.instagram.com/imturingo/" class="icon-button instagram"><i class="fa fa-instagram"></i><span></span></a>
+	</section>
+	
+	
+</body>	
+</html>
